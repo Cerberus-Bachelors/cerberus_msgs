@@ -11,11 +11,13 @@ find_package(rosidl_default_generators REQUIRED)
 
 find_package(builtin_interfaces REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 # Generate interfaces
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/SensorData.msg"
-  DEPENDENCIES builtin_interfaces std_msgs
+  "msg/CerberusObservationTensor.msg"
+  DEPENDENCIES builtin_interfaces std_msgs geometry_msgs
 )
 
 if(BUILD_TESTING)
