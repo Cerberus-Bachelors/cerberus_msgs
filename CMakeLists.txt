@@ -17,6 +17,7 @@ find_package(geometry_msgs REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/SensorData.msg"
   "msg/CerberusObservationTensor.msg"
+  "msg/EspCommands.msg"
   DEPENDENCIES builtin_interfaces std_msgs geometry_msgs
 )
 
