@@ -18,6 +18,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/SensorData.msg"
   "msg/CerberusObservationTensor.msg"
   "msg/EspCommands.msg"
+  "msg/JogCommand.msg"
   DEPENDENCIES builtin_interfaces std_msgs geometry_msgs
 )
 
